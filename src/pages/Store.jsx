@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import otherBackground from '../assets/otherBackground.svg';
 import featured1 from '../assets/featured1.svg';
 import featured2 from '../assets/featured2.svg';
@@ -36,7 +36,7 @@ const Store = () => {
                             Track
                         </button>
                     </div>
-                    <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[24px] md:text-[24px] text-[20px] capitalise font-titiliumweb flex gap-4'>All RWA sales <span>All NFTs minted</span> <span>All Purchased NFTs</span> <span>Edit store information</span></h3>
+                    <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[24px] md:text-[24px] text-[20px] capitalise font-titiliumweb flex gap-4'><Link>All Products(created NFT)</Link> <span><Link>All Purchased Products (minted NFTS)</Link></span> <span><Link>My store</Link></span> <span><Link>Transactions (receivables and collections)</Link></span></h3>
                     <div className="flex lg:flex-row md:flex-row flex-col justify-between my-10 flex-wrap">
                         <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg mb-4">
                             <img

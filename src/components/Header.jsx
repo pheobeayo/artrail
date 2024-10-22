@@ -141,7 +141,7 @@ const Header = () => {
               </MenuItem>
               <MenuItem>
                 <a
-                  href="/stores"
+                  href="/store"
                   className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
                 >
                   Stores

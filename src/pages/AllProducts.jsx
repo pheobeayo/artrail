@@ -69,25 +69,25 @@ const AllProducts = () => {
                                 <td className="border-b font-serif font-normal p-2">Zarahs Store</td>
                                 <td className="border-b font-serif font-normal p-2">0xg70A34.......0F2C759</td>
                                 <td className="border-b font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className="border-b font-serif font-normal p-2"><MdDelete /></td>
+                                <td className="border-b font-serif font-normal p-2"><MdDelete color='red' /></td>
                             </tr>
                             <tr className="font-serif font-normal text-center ">
                                 <td className="border-b font-serif font-normal p-2">Zarahs Store</td>
                                 <td className="border-b font-serif font-normal p-2">0xg70A34.......0F2C759</td>
                                 <td className="border-b font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className="border-b font-serif font-normal p-2"><MdDelete /></td>
+                                <td className="border-b font-serif font-normal p-2"><MdDelete color='red' /></td>
                             </tr>
                             <tr className="font-serif font-normal text-center ">
                                 <td className="border-b font-serif font-normal p-2">Zarahs Store</td>
                                 <td className="border-b font-serif font-normal p-2">0xg70A34.......0F2C759</td>
                                 <td className="border-b font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className="border-b font-serif font-normal p-2"><MdDelete /></td>
+                                <td className="border-b font-serif font-normal p-2"><MdDelete color='red' /></td>
                             </tr>
                             <tr className="font-serif font-normal text-center">
                                 <td className="font-serif font-normal p-2">Zarahs Store</td>
                                 <td className=" font-serif font-normal p-2">0xg70A34.......0F2C759</td>
                                 <td className=" font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className=" font-serif font-normal p-2"><MdDelete  /></td>
+                                <td className=" font-serif font-normal p-2"><MdDelete color='red'  /></td>
                             </tr>
                         </tbody>
                     </table>

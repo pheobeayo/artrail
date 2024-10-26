@@ -20,6 +20,8 @@ const SellerProductDetails = lazy(() => import('../pages/SellerProductDetails'))
 const AllProducts = lazy(() => import('../pages/AllProducts'));
 const AllPurchasedProducts = lazy(() => import('../pages/AllPurchasedProducts'));
 const Transactions = lazy(() => import('../pages/Transactions'));
+const Chat = lazy(() => import('../pages/Chat'));
+const BuyerProductTracker = lazy(() => import('../pages/BuyerProductTracker'));
 
 
 
@@ -37,6 +39,8 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="/store/all-products" element={<AllProducts />} />
       <Route path="/store/all-purchasedproducts" element={<AllPurchasedProducts />} />
       <Route path="/store/transactions" element={<Transactions />} />
+      <Route path="/chat" element={<Chat />} />
+      <Route path="/buyerproducttracker" element={<BuyerProductTracker />} />
       
 
     </Route>

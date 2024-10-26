@@ -66,7 +66,7 @@ const Header = () => {
                   href="/store"
                   className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
                 >
-                  Stores
+                 My Stores
                 </a>
               </MenuItem>
               <MenuItem>
@@ -144,7 +144,7 @@ const Header = () => {
                   href="/store"
                   className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
                 >
-                  Stores
+                 My Stores
                 </a>
               </MenuItem>
               <MenuItem>

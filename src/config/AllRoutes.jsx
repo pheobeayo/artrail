@@ -17,6 +17,10 @@ const MarketPlace = lazy(() => import('../pages/MarketPlace'));
 const ProductDetails = lazy(() => import('../pages/ProductDetails'));
 const Store = lazy(() => import('../pages/Store'));
 const SellerProductDetails = lazy(() => import('../pages/SellerProductDetails'));
+const AllProducts = lazy(() => import('../pages/AllProducts'));
+const AllPurchasedProducts = lazy(() => import('../pages/AllPurchasedProducts'));
+const Transactions = lazy(() => import('../pages/Transactions'));
+
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -30,6 +34,11 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="/productdetails" element={<ProductDetails />} />
       <Route path="/store" element={<Store />} />
       <Route path="/sellerproductdetails" element={<SellerProductDetails />} />
+      <Route path="/store/all-products" element={<AllProducts />} />
+      <Route path="/store/all-purchasedproducts" element={<AllPurchasedProducts />} />
+      <Route path="/store/transactions" element={<Transactions />} />
+      
+
     </Route>
     
   </Route>

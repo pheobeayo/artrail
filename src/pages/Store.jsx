@@ -4,6 +4,8 @@ import featured1 from '../assets/featured1.svg';
 import featured2 from '../assets/featured2.svg';
 import featured3 from '../assets/featured3.svg';
 import Ellipse from '../assets/Ellipse.svg';
+import { FaPlus } from "react-icons/fa6";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Store = () => {
 
@@ -30,13 +32,28 @@ const Store = () => {
                     backgroundPosition: "left top",
                 }}>
                 <div className='lg:w-[80%] md:w-[80%] w-[100%] mx-auto py-12 px-4 lg:px-0 md:px-0'>
-                    <div className="border border-white rounded-3xl w-[50%] flex justify-between">
-                        <div className="grid place-content-center text-[13px] p-4"><p className="text-white text-center">Input Product tracking code</p></div>
-                        <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
-                            Track
-                        </button>
+                    <div className="flex lg:flex-row md:flex-row flex-col justify-between my-10 flex-wrap">
+                        <div className="border border-white rounded-3xl w-[40%] flex justify-between">
+                            <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">Input Product tracking code</p></div>
+                            <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
+                                Track
+                            </button>
+                        </div>
+                        <div className="bg-[#33302E] border border-white rounded-3xl w-[20%] flex justify-between p-4">
+                            <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">     Your Messages</p></div>
+                        </div>
                     </div>
-                    <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[24px] md:text-[24px] text-[20px] capitalise font-titiliumweb flex gap-4'><Link>All Products(created NFT)</Link> <span><Link>All Purchased Products (minted NFTS)</Link></span> <span><Link>My store</Link></span> <span><Link>Transactions (receivables and collections)</Link></span></h3>
+                    <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[16px] md:text-[16px] text-[12px] capitalise font-titiliumweb flex justify-between'>
+                        <Link to='/store/all-products'>All Products(created NFT)</Link> <span>
+                            <Link to='/store/all-purchasedproducts'>All Purchased Products (minted NFTS)</Link></span>
+                        <span to='/store/transactions'><Link>Transactions (receivables and collections)</Link></span>
+                        <span><Link>All Claimed NFTs</Link></span>
+                    </h3>
+                    <div className='bg-transparent border border-white rounded-3xl w-full flex justify-between p-4'>
+                        <p className='text-left text-white font-semibold font-titiliumweb text-[20px] flex gap-2'>Your Store(s) <MdKeyboardArrowDown /></p>
+                        <div className='border border-white rounded-3xl w-[20%] text-center flex'><p className='text-white font-titiliumweb text-[16px] p-4 flex justify-between'><FaPlus color='white' className="mr-2" />Add another store</p></div>
+                    </div>
+
                     <div className="flex lg:flex-row md:flex-row flex-col justify-between my-10 flex-wrap">
                         <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg mb-4">
                             <img
@@ -47,8 +64,8 @@ const Store = () => {
                             <h3 className="font-bold mt-4 lg:text-[18px] md:text-[18px] text-[16px]  text-white">
                                 Handcrafted Wooden Sculpture
                             </h3>
-                            <p className=" text-white lg:text-[14px] md:text-[14px] text-[10px] ">
-                                Ghana, West Africa
+                            <p className=" flex justify-between text-white lg:text-[14px] md:text-[14px] text-[10px] ">
+                                Ghana, West Africa <span>Status: Sold</span>
                             </p>
                             <p className="flex justify-between text-white font-bold mt-4 lg:text-[18px] md:text-[18px] text-[16px]">
                                 0.5 ETH <span>10 units </span>
@@ -67,8 +84,8 @@ const Store = () => {
                             <h3 className="font-bold mt-4 lg:text-[18px] md:text-[18px] text-[16px]  text-white">
                                 Vintage Ceramic Vase
                             </h3>
-                            <p className="text-white lg:text-[14px] md:text-[14px] text-[10px]">
-                                Florence, Italy
+                            <p className="flex justify-between text-white lg:text-[14px] md:text-[14px] text-[10px]">
+                                Florence, Italy <span>Status: Listed</span>
                             </p>
                             <p className="flex justify-between text-white font-bold mt-4 lg:text-[18px] md:text-[18px] text-[16px]">
                                 1 ETH <span>3 units </span>
@@ -87,8 +104,8 @@ const Store = () => {
                             <h3 className="font-bold mt-4 lg:text-[18px] md:text-[18px] text-[16px]  text-white">
                                 Artisan Silk Wall Hanging
                             </h3>
-                            <p className="text-white lg:text-[14px] md:text-[14px] text-[10px]">
-                                Istanbul, Turkey
+                            <p className="flex justify-between text-white lg:text-[14px] md:text-[14px] text-[10px]">
+                                Istanbul, Turkey <span>Status: Canceled</span>
                             </p>
                             <p className="flex justify-between text-white font-bold mt-4 lg:text-[18px] md:text-[18px] text-[16px]">
                                 0.8 ETH <span>5 units  </span>
@@ -103,7 +120,7 @@ const Store = () => {
             </section>
 
 
-        </main>
+        </main >
     );
 };
 

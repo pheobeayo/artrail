@@ -23,8 +23,11 @@ const ProductDetails = () => {
                         craftsmanship passed down through generations in West Africa.</p>
                     <p className='flex gap-12 my-4 font-titiliumweb mb-4 font-bold text-white lg:text-[24px] md:text-[24px] text-[20px]'>0.5 ETH <span>10 units </span></p>
                     <p className='flex gap-24 my-4 text-[#54BE73] lg:text-[18px] md:text-[18px] text-[14px]'>Price <span>Quantity</span></p>
-                    <button className="bg-[#54BE73] text-white py-2 px-4  lg:text-[20px] md:text-[20px] font-bold text-[16px] w-full my-4 rounded-3xl">
+                    <button className="bg-[#54BE73] text-white py-2 px-4  lg:text-[20px] md:text-[20px] font-bold text-[16px] w-full my-1 rounded-3xl">
                         Purchase
+                    </button>
+                    <button className="bg-transparent text-white py-2 px-4  lg:text-[20px] md:text-[20px] font-bold text-[16px] w-full my-4 rounded-3xl border border-white">
+                        Chat Seller
                     </button>
                 </div>
             </section>

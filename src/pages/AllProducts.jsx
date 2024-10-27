@@ -43,10 +43,10 @@ const AllProducts = () => {
                         </div>
                     </div>
                     <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[16px] md:text-[16px] text-[12px] capitalise font-titiliumweb flex justify-between'>
-                        <Link to='/store/all-products'>All Products(created NFT)</Link> <span>
-                            <Link to='/store/all-purchasedproducts'>All Purchased Products (minted NFTS)</Link></span>
-                        <span><Link to='/store/transactions'>Transactions (receivables and collections)</Link></span>
-                        <span><Link>All Claimed NFTs</Link></span>
+                        <Link to='/store/all-products'>All Products</Link> <span>
+                            <Link to='/store/transactions'>All Transactions </Link></span>
+                        <span><Link to='/store/mintednfts'>Minted NFTs</Link></span>
+                        <span><Link to='/store/claimednfts'>Claimed NFTs</Link></span>
                     </h3>
 
 

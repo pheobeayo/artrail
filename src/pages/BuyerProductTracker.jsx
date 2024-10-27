@@ -20,7 +20,9 @@ const BuyerProductTracker = () => {
                         craftsmanship passed down through generations in West Africa.</p>
                     <p className='flex justify-between my-4 font-titiliumweb mb-4 font-bold text-white lg:text-[24px] md:text-[24px] text-[20px] text-center'>0.5 ETH <span>5 units </span><span>5 units</span></p>
                     <p className='flex justify-between my-4 text-[#54BE73] lg:text-[14px] md:text-[14px] text-[10px] text-center'>Price <span>total quantity left for purchase</span><span> total purchased</span></p>
-
+                    <button className="bg-transparent text-white py-2 px-4  lg:text-[20px] md:text-[20px] font-bold text-[14px] w-full  rounded-3xl border border-white">
+                        status of the item
+                    </button>
                 </div>
             </section>
         </main >

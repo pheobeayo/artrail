@@ -15,15 +15,14 @@ const CreateStore = lazy(() => import('../pages/CreateStore'));
 const ListProduct = lazy(() => import('../pages/ListProduct'));
 const MarketPlace = lazy(() => import('../pages/MarketPlace'));
 const ProductDetails = lazy(() => import('../pages/ProductDetails'));
-const Store = lazy(() => import('../pages/Store'));
 const SellerProductDetails = lazy(() => import('../pages/SellerProductDetails'));
+const Store = lazy(() => import('../pages/Store'));
 const AllProducts = lazy(() => import('../pages/AllProducts'));
-const AllPurchasedProducts = lazy(() => import('../pages/AllPurchasedProducts'));
 const Transactions = lazy(() => import('../pages/Transactions'));
 const Chat = lazy(() => import('../pages/Chat'));
 const BuyerProductTracker = lazy(() => import('../pages/BuyerProductTracker'));
-
-
+const MintedNFTs = lazy(() => import('../pages/MintedNFTs'));
+const ClaimedNFTs = lazy(() => import('../pages/ClaimedNFTs'));
 
 const router = createBrowserRouter(createRoutesFromElements(
 
@@ -36,11 +35,14 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="/productdetails" element={<ProductDetails />} />
       <Route path="/store" element={<Store />} />
       <Route path="/sellerproductdetails" element={<SellerProductDetails />} />
-      <Route path="/store/all-products" element={<AllProducts />} />
-      <Route path="/store/all-purchasedproducts" element={<AllPurchasedProducts />} />
+      <Route path="/store/allproducts" element={<AllProducts />} />
       <Route path="/store/transactions" element={<Transactions />} />
       <Route path="/chat" element={<Chat />} />
       <Route path="/buyerproducttracker" element={<BuyerProductTracker />} />
+      <Route path="/store/mintednfts" element={<MintedNFTs />} />
+      <Route path="/store/claimednfts" element={<ClaimedNFTs />} />
+
+
       
 
     </Route>

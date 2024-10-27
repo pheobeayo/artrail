@@ -32,22 +32,17 @@ const Transactions = () => {
                     backgroundPosition: "left top",
                 }}>
                 <div className='lg:w-[80%] md:w-[80%] w-[100%] mx-auto py-12 px-4 lg:px-0 md:px-0'>
-                    <div className="flex lg:flex-row md:flex-row flex-col justify-between my-10 flex-wrap">
-                        <div className="border border-white rounded-3xl w-[40%] flex justify-between">
-                            <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">Input Product tracking code</p></div>
-                            <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
-                                Track
-                            </button>
-                        </div>
-                        <div className="bg-[#33302E] border border-white rounded-3xl w-[20%] flex justify-between p-4">
-                            <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">     Your Messages</p></div>
-                        </div>
+                    <div className="border border-white rounded-3xl w-[40%] flex justify-between">
+                        <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">Input Product tracking code</p></div>
+                        <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
+                            Track
+                        </button>
                     </div>
                     <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[16px] md:text-[16px] text-[12px] capitalise font-titiliumweb flex justify-between'>
-                        <Link to='/store/all-products'>All Products(created NFT)</Link> <span>
-                            <Link to='/store/all-purchasedproducts'>All Purchased Products (minted NFTS)</Link></span>
-                        <span><Link to='/store/transactions'>Transactions (receivables and collections)</Link></span>
-                        <span><Link>All Claimed NFTs</Link></span>
+                        <Link to='/store/all-products'>All Products</Link> <span>
+                            <Link to='/store/transactions'>All Transactions </Link></span>
+                        <span><Link to='/store/mintednfts'>Minted NFTs</Link></span>
+                        <span><Link to='/store/claimednfts'>Claimed NFTs</Link></span>
                     </h3>
                     <div className='border border-white rounded-3xl'>
 
@@ -56,6 +51,7 @@ const Transactions = () => {
                                 <tr className="text-white font-serif font-normal text-center">
                                     <th className="border-b  p-2 ">Product </th>
                                     <th className="border-b p-2">Product Name</th>
+                                    <th className="border-b p-2">Amount</th>
                                     <th className="border-b p-2">Status</th>
 
                                 </tr>
@@ -70,6 +66,7 @@ const Transactions = () => {
                                         />
                                         </div></td>
                                     <td className="border-b font-serif font-normal p-2">Handcrafted Wooden Sculpture</td>
+                                    <td className="border-b font-serif font-normal p-2">0.5 ETH</td>
                                     <td className="border-b font-serif font-normal p-2">Pending Payment</td>
 
                                 </tr>
@@ -83,6 +80,7 @@ const Transactions = () => {
                                         </div>
                                     </td>
                                     <td className="border-b font-serif font-normal p-2">Vintage Ceramic Vase</td>
+                                    <td className="border-b font-serif font-normal p-2">1 ETH</td>
                                     <td className="border-b font-serif font-normal p-2">Pending Received</td>
 
                                 </tr>
@@ -96,6 +94,7 @@ const Transactions = () => {
                                         </div>
                                     </td>
                                     <td className="border-b font-serif font-normal p-2">Artisan Silk Wall Hanging</td>
+                                    <td className="border-b font-serif font-normal p-2">0.8 ETH</td>
                                     <td className="border-b font-serif font-normal p-2">Pending Canceled</td>
 
                                 </tr>
@@ -109,6 +108,7 @@ const Transactions = () => {
                                         </div>
                                     </td>
                                     <td className=" font-serif font-normal p-2">Wooden Sculpture</td>
+                                    <td className="border-b font-serif font-normal p-2">0.4 ETH</td>
                                     <td className=" font-serif font-normal p-2">Pending Payment</td>
 
                                 </tr>

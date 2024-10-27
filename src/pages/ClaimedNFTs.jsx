@@ -31,24 +31,19 @@ const AllPurchasedProducts = () => {
                     backgroundPosition: "left top",
                 }}>
                 <div className='lg:w-[80%] md:w-[80%] w-[100%] mx-auto py-12 px-4 lg:px-0 md:px-0'>
-                    <div className="flex lg:flex-row md:flex-row flex-col justify-between my-10 flex-wrap">
-                        <div className="border border-white rounded-3xl w-[40%] flex justify-between">
-                            <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">Input Product tracking code</p></div>
-                            <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
-                                Track
-                            </button>
-                        </div>
-                        <div className="bg-[#33302E] border border-white rounded-3xl w-[20%] flex justify-between p-4">
-                            <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">     Your Messages</p></div>
-                        </div>
+                    <div className="border border-white rounded-3xl w-[50%] flex justify-between">
+                        <div className="grid place-content-center text-[13px] p-2"><p className="text-white text-center">Input Product tracking code</p></div>
+                        <button className="bg-[#33302E] w-[20%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
+                            Track
+                        </button>
                     </div>
-                    <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[16px] md:text-[16px] text-[12px] capitalise font-titiliumweb flex justify-between'>
-                        <Link to='/store/all-products'>All Products(created NFT)</Link> <span>
-                            <Link to='/store/all-purchasedproducts'>All Purchased Products (minted NFTS)</Link></span>
-                        <span><Link to='/store/transactions'>Transactions (receivables and collections)</Link></span>
-                        <span><Link>All Claimed NFTs</Link></span>
-                    </h3>
 
+                    <h3 className='font-medium text-white mt-4 lg:mt-4 md:mt-4 my-2 lg:text-[16px] md:text-[16px] text-[12px] capitalise font-titiliumweb flex justify-between'>
+                        <Link to='/store/all-products'>All Products</Link> <span>
+                            <Link to='/store/transactions'>All Transactions </Link></span>
+                        <span><Link to='/store/mintednfts'>Minted NFTs</Link></span>
+                        <span><Link to='/store/claimednfts'>Claimed NFTs</Link></span>
+                    </h3>
 
                     <div className="flex lg:flex-row md:flex-row flex-col justify-between my-10 flex-wrap">
                         <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg mb-4">
@@ -69,7 +64,9 @@ const AllPurchasedProducts = () => {
                             <p className="flex justify-between text-[#54BE73]  lg:text-[14px] md:text-[14px] text-[10px]">
                                 Price  <span>Quantity </span>
                             </p>
-
+                            <button className="bg-transparent text-white py-2 px-4  lg:text-[12px] md:text-[12px] font-bold text-[10px] w-full my-2 rounded-3xl border border-white">
+                                Resell
+                            </button>
                         </div>
                         <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg mb-4">
                             <img
@@ -89,7 +86,9 @@ const AllPurchasedProducts = () => {
                             <p className="flex justify-between text-[#54BE73]  lg:text-[14px] md:text-[14px] text-[10px]">
                                 Price  <span>Quantity </span>
                             </p>
-
+                            <button className="bg-transparent text-white py-2 px-4  lg:text-[12px] md:text-[12px] font-bold text-[10px] w-full my-2 rounded-3xl border border-white">
+                                Resell
+                            </button>
                         </div>
                         <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg mb-4">
                             <img
@@ -109,7 +108,9 @@ const AllPurchasedProducts = () => {
                             <p className="flex justify-between text-[#54BE73]  lg:text-[14px] md:text-[14px] text-[10px]">
                                 Price  <span>Quantity </span>
                             </p>
-
+                            <button className="bg-transparent text-white py-2 px-4  lg:text-[12px] md:text-[12px] font-bold text-[10px] w-full my-2 rounded-3xl border border-white">
+                                Resell
+                            </button>
                         </div>
                     </div>
                 </div>

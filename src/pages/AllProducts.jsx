@@ -4,9 +4,7 @@ import featured1 from '../assets/featured1.svg';
 import featured2 from '../assets/featured2.svg';
 import featured3 from '../assets/featured3.svg';
 import Ellipse from '../assets/Ellipse.svg';
-import { FaPlus } from "react-icons/fa6";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { MdDelete } from "react-icons/md";
+
 
 const AllProducts = () => {
 
@@ -50,48 +48,8 @@ const AllProducts = () => {
                         <span><Link to='/store/transactions'>Transactions (receivables and collections)</Link></span>
                         <span><Link>All Claimed NFTs</Link></span>
                     </h3>
-                    <div className='border border-white rounded-3xl'>
-                    <div className='bg-transparent border-none rounded-3xl w-full flex justify-between p-4'>
-                        <p className='text-left text-white font-semibold font-titiliumweb text-[20px] flex gap-2'>Your Store(s) <MdKeyboardArrowDown /></p>
-                        <div className='border border-white rounded-3xl w-[20%] text-center flex'><p className='text-white font-titiliumweb text-[16px] p-4 flex justify-between'><FaPlus color='white' className="mr-2" />Add another store</p></div>
-                    </div>
-                    <table className="table-fixed border-none  border-spacing-2 w-[100%]">
-                        <thead className="p-4">
-                            <tr className="text-white font-serif font-normal text-center">
-                                <th className="border-b border-t p-2 ">All Stores</th>
-                                <th className="border-b border-t p-2">Wallet Address</th>
-                                <th className="border-b border-t p-2">Action</th>
-                                <th className="border-b border-t p-2 text-left">Delete Store</th>
-                            </tr>
-                        </thead>
-                        <tbody className='text-white p-4'>
-                            <tr className="font-serif font-normal text-center">
-                                <td className="border-b font-serif font-normal p-2">Zarahs Store</td>
-                                <td className="border-b font-serif font-normal p-2">0xg70A34.......0F2C759</td>
-                                <td className="border-b font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className="border-b font-serif font-normal p-2"><MdDelete color='red' /></td>
-                            </tr>
-                            <tr className="font-serif font-normal text-center ">
-                                <td className="border-b font-serif font-normal p-2">Zarahs Store</td>
-                                <td className="border-b font-serif font-normal p-2">0xg70A34.......0F2C759</td>
-                                <td className="border-b font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className="border-b font-serif font-normal p-2"><MdDelete color='red' /></td>
-                            </tr>
-                            <tr className="font-serif font-normal text-center ">
-                                <td className="border-b font-serif font-normal p-2">Zarahs Store</td>
-                                <td className="border-b font-serif font-normal p-2">0xg70A34.......0F2C759</td>
-                                <td className="border-b font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className="border-b font-serif font-normal p-2"><MdDelete color='red' /></td>
-                            </tr>
-                            <tr className="font-serif font-normal text-center">
-                                <td className="font-serif font-normal p-2">Zarahs Store</td>
-                                <td className=" font-serif font-normal p-2">0xg70A34.......0F2C759</td>
-                                <td className=" font-serif font-normal p-2"><Link to='/' className='text-[#54BE73]'>View Store</Link></td>
-                                <td className=" font-serif font-normal p-2"><MdDelete color='red'  /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div>
+
+
                     <div className="flex lg:flex-row md:flex-row flex-col justify-between my-10 flex-wrap">
                         <div className="lg:w-[32%] md:w-[32%] w-[100%] p-4  border-white rounded-xl border shadow-lg mb-4">
                             <img

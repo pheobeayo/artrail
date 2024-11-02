@@ -8,7 +8,7 @@ const Hero = () => {
 
 
     return (
-        <main className="bg-[#26201A]">
+        <main className="bg-[#26201A] w-screen ">
             <section className="bg-[#26201A] bg-no-repeat bg-cover"
                 style={{
                     backgroundImage: `url(${heroBackground})`,

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SellerProductDetails = () => {
     return (
-        <main className="bg-[#231D16]">
+        <main className="bg-[#231D16] w-screen">
             <h1 className=" text-white lg:text-[28px] md:text-[28px] text-[20px] font-serif font-bold flex gap-6 lg:w-[80%] md:w-[80%] w-[100%] mx-auto py-6 px-4">
                 <Link to='/marketplace'> Back </Link><span>  Details Page</span>
             </h1>

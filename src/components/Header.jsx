@@ -9,7 +9,7 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className="py-8 bg-[#231D16] bg-no-repeat"
+    <header className="py-8 bg-[#231D16] w-screen"
     >
       <div className="w-[90%] mx-auto lg:flex md:flex justify-between hidden">
         <img src={logo} alt="" className="w-[235px] h-[43px]" />
@@ -85,6 +85,14 @@ const Header = () => {
                   Profile
                 </a>
               </MenuItem>
+              <MenuItem>
+                <a
+                  href="/chat"
+                  className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
+                >
+                  Chat
+                </a>
+              </MenuItem>
             </div>
           </MenuItems>
         </Menu>
@@ -153,6 +161,14 @@ const Header = () => {
                   className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
                 >
                   Profile
+                </a>
+              </MenuItem>
+              <MenuItem>
+                <a
+                  href="/chat"
+                  className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
+                >
+                  Chat
                 </a>
               </MenuItem>
             </div>

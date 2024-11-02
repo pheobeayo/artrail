@@ -6,7 +6,7 @@ const CreateStore = () => {
 
 
     return (
-        <main className="bg-[#231D16]">
+        <main className="bg-[#231D16] w-screen">
             <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white from-15% to-[#FFB054] to-90% lg:text-[24px] md:text-[24px] text-[20px] font-serif font-bold  text-center">
                 Create Store
             </h1>

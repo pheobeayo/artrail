@@ -7,7 +7,7 @@ const Chat = () => {
 
 
     return (
-        <main className='bg-[#231D16]'>
+        <main className='bg-[#231D16] w-screen'>
             <div className='w-[90%] mx-auto p-8'>
 
                 <section className='flex lg:flex-row md:flex-row flex-col justify-between'>

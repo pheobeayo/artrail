@@ -26,41 +26,39 @@ Key Features:
 
 
 ## Tokenization of RWAs as NFTs
-Store creation and management 
+ - Store creation and management 
 
 
-Product Listing and NFTs creation
+ - Product Listing and NFTs creation
 
 
-Unique NFT Code identifier
+ - Unique NFT Code identifier
 
 
-Marketplace 
+ - Marketplace 
 
-Product purchase and NFTs minting 
-
-
-Chat/Communication 
+ - Product purchase and NFTs minting 
 
 
-NFT tracking and ownership verification
+ - Chat/Communication 
 
 
-NFT secondary market
+ - NFT tracking and ownership verification
 
 
-RWA claiming.
+ - NFT secondary market
+
+
+ - RWA claiming.
 
 
 
 ## Details of Features and Functionality
-User Role: Creators/Sellers such as Artist, artisan, artifact
- - 1a. Store creation and management 
+ - 1. User Role: Creators/Sellers such as Artist, artisan, artifact
+     - a.  Store creation and management 
 Sellers can create stores with details like (Store Name and the store Location)
- - 1b. RWA Product Listing/ NFT generation for RWA
- 
- 
- Function: List real-world assets as product by inputting details:
+     - b. RWA Product Listing/ NFT generation for RWA
+      Function: List real-world assets as product by inputting details:
 Product Name/title 
 Image 
 Product description (type, material, history)
@@ -69,7 +67,7 @@ Quantity (units available)
 Price per quantity (in cryptocurrency).
 NFT is created for each successful listed product.
 Unique NFT Code/QR Code: A unique identifier is generated for each listed product NFT to enable tracking, ownership history, and authentication.
- - 2 NFT Transfer & Ownership
+ - 2. NFT Transfer & Ownership
 One Buyer at a Time: NFTs minted for RWAs can only be transferred to one buyer at a time, ensuring single ownership per asset.
 Upon purchase and claims (asset delivery), the NFT is bound to the buyer until it resold.
 Ownership Verification: Buyers can verify the authenticity of the NFT and its underlying real-world asset through unique NFT code blockchain records.

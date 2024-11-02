@@ -67,7 +67,7 @@ const Transactions = () => {
                                         </div></td>
                                     <td className="border-b font-serif font-normal p-2">Handcrafted Wooden Sculpture</td>
                                     <td className="border-b font-serif font-normal p-2">0.5 ETH</td>
-                                    <td className="border-b font-serif font-normal p-2">Pending Payment</td>
+                                    <td className="border-b font-serif font-normal p-2">Received</td>
 
                                 </tr>
                                 <tr className="font-serif font-normal text-center ">
@@ -81,7 +81,7 @@ const Transactions = () => {
                                     </td>
                                     <td className="border-b font-serif font-normal p-2">Vintage Ceramic Vase</td>
                                     <td className="border-b font-serif font-normal p-2">1 ETH</td>
-                                    <td className="border-b font-serif font-normal p-2">Pending Received</td>
+                                    <td className="border-b font-serif font-normal p-2">Received</td>
 
                                 </tr>
                                 <tr className="font-serif font-normal text-center ">
@@ -95,7 +95,7 @@ const Transactions = () => {
                                     </td>
                                     <td className="border-b font-serif font-normal p-2">Artisan Silk Wall Hanging</td>
                                     <td className="border-b font-serif font-normal p-2">0.8 ETH</td>
-                                    <td className="border-b font-serif font-normal p-2">Pending Canceled</td>
+                                    <td className="border-b font-serif font-normal p-2">Canceled</td>
 
                                 </tr>
                                 <tr className="font-serif font-normal text-center">
@@ -109,7 +109,7 @@ const Transactions = () => {
                                     </td>
                                     <td className=" font-serif font-normal p-2">Wooden Sculpture</td>
                                     <td className="border-b font-serif font-normal p-2">0.4 ETH</td>
-                                    <td className=" font-serif font-normal p-2">Pending Payment</td>
+                                    <td className=" font-serif font-normal p-2">Received</td>
 
                                 </tr>
                             </tbody>

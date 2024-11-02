@@ -80,9 +80,7 @@ Upon purchase,  NFT tied to the real-world asset is minted to the buyers
 Buyers can view or access the product code for tracking.
 Note that payment is held in the escrow until the buyer claims the NFT after the item receipt.
  - 4. Communication Feature and Status update: 
-Communication/Chat feature between the buyers and the sellers for delivery information 
-
-Note: Only wallet addresses used in purchasing assets should be used in the communication of delivery information to the seller. Sellers and buyers should be duly notified of this. In addition, for pickup delivery, presentation of NFT for assets claimed 
+Communication/Chat feature between the buyers and the sellers for delivery information Note: Only wallet addresses used in purchasing assets should be used in the communication of delivery information to the seller. Sellers and buyers should be duly notified of this. In addition, for pickup delivery, presentation of NFT for assets claimed 
  - 5. Tracking & Claiming RWAs
 RWA Tracking: After purchasing the product, the buyer can access and claim the minted NFT using the Product’s unique code.
 Claiming Process

@@ -12,7 +12,7 @@ import { ethers, parseEther } from "ethers";
 import { ErrorDecoder } from "ethers-decode-error";
 import abi from "../constants/abi.json";
 
-const CreateStore = () => {
+const CreateAccount = () => {
   const [storeName, setStoreName] = useState("");
   const [storeLocation, setStoreLocation] = useState("");
   const [storeWallet, setStoreWallet] = useState("");
@@ -123,4 +123,4 @@ const CreateStore = () => {
   );
 };
 
-export default CreateStore;
+export default CreateAccount;

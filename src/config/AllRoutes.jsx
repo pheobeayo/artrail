@@ -12,6 +12,7 @@ import PageLoader from "../components/Loader/PageLoader";
 const Home = lazy(() => import("../pages/Home"));
 const HomeLayout = lazy(() => import('../layout/HomeLayout'));
 const CreateStore = lazy(() => import('../pages/CreateStore'));
+const CreateAccount = lazy(() => import('../pages/CreateAccount'));
 const ListProduct = lazy(() => import('../pages/ListProduct'));
 const MarketPlace = lazy(() => import('../pages/MarketPlace'));
 const ProductDetails = lazy(() => import('../pages/ProductDetails'));
@@ -34,6 +35,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="/marketplace" element={<MarketPlace />} />
       <Route path="/marketplace/:id" element={<ProductDetails />} />
       <Route path="/store" element={<Store />} />
+      <Route path="/profile" element={<CreateAccount />} />
       <Route path="/sellerproductdetails" element={<SellerProductDetails />} />
       <Route path="/store/allproducts" element={<AllProducts />} />
       <Route path="/store/transactions" element={<Transactions />} />

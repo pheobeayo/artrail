@@ -8,45 +8,86 @@ const ListProduct = () => {
   const APIKEY = import.meta.env.VITE_VOTTUN_APIKEY;
   const APPID = import.meta.env.VITE_VOTTUN_APPID;
 
+//   const handleFileChange = async (event) => {
+//     const file = event.target.files[0];
+//     if (!file) {
+//       alert("Please select a file first!");
+//       return;
+//     }
+
+//     const formData = new FormData();
+//     formData.append("filename", file.name);
+//     formData.append("file", file);
+
+//     try {
+//       const response = await fetch(
+//         "https://ipfsapi-v2.vottun.tech/ipfs/v2/file/upload",
+//         {
+//           method: "POST",
+//           headers: {
+//             Authorization: `Bearer ${APIKEY.trim()}`,
+//             "x-application-vkn": `${APPID.trim()}`,
+//             //   'Content-Type': 'multipart/formdata'
+//           },
+//           body: formData,
+//         }
+//       );
+
+//       const data = await response.json();
+//       console.log(data);
+
+//       if (data && data.cid) {
+//         setIpfsUrl(`https://ipfs.io/ipfs/${data.cid}`);
+//         alert("File uploaded successfully!");
+//       } else {
+//         alert("File upload failed!");
+//       }
+//     } catch (error) {
+//       console.error("Error uploading file:", error);
+//       alert("An error occurred during the upload process.");
+//     }
+//   };
+
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
     if (!file) {
       alert("Please select a file first!");
       return;
     }
-
+  
     const formData = new FormData();
     formData.append("filename", file.name);
     formData.append("file", file);
-
+  
     try {
-      const response = await fetch(
-        "https://ipfsapi-v2.vottun.tech/ipfs/v2/file/upload",
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${APIKEY.trim()}`,
-            "x-application-vkn": `${APPID.trim()}`,
-            //   'Content-Type': 'multipart/formdata'
-          },
-          body: formData,
+      const response = await fetch("https://ipfsapi-v2.vottun.tech/ipfs/v2/file/upload", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${APIKEY.trim()}`,
+          "x-application-vkn": `${APPID.trim()}`,
+          // Remove Content-Type to let the browser set it automatically for FormData
+        },
+        body: formData,
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        if (data && data.cid) {
+          setIpfsUrl(`https://ipfs.io/ipfs/${data.cid}`);
+          alert("File uploaded successfully!");
+        } else {
+          alert("File upload failed! Check API response.");
         }
-      );
-
-      const data = await response.json();
-      console.log(data);
-
-      if (data && data.cid) {
-        setIpfsUrl(`https://ipfs.io/ipfs/${data.cid}`);
-        alert("File uploaded successfully!");
       } else {
-        alert("File upload failed!");
+        console.error("Error:", response.status, response.statusText);
+        alert("Failed to upload file: Server responded with status " + response.status);
       }
     } catch (error) {
       console.error("Error uploading file:", error);
       alert("An error occurred during the upload process.");
     }
   };
+  
 
   return (
     <main className="bg-[#231D16] w-screen ">

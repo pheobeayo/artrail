@@ -8,7 +8,6 @@ import {
   useWeb3ModalProvider,
 } from "@web3modal/ethers/react";
 import { isSupportedChain } from "../connection";
-import { ethers, parseEther } from "ethers";
 import { ErrorDecoder } from "ethers-decode-error";
 import abi from "../constants/abi.json";
 
@@ -33,7 +32,6 @@ const CreateStore = () => {
         storeName,
         storeLocation
       );
-      console.log("transaction: ", transaction);
       const receipt = await transaction.wait();
 
       if (receipt.status) {
@@ -47,7 +45,6 @@ const CreateStore = () => {
       });
     } catch (err) {
       const decodedError = await errorDecoder.decode(err);
-      console.error(err);
       toast.error(`Store creation failed! - ${decodedError.reason}`, {
         position: "top-center",
       });

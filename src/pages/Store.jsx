@@ -39,23 +39,6 @@ const Store = () => {
     if (!data) return <LoadingSpinner />;
     console.log(data)
 
-<<<<<<< Updated upstream
-
-    return (
-        <main className="bg-[#231D16] w-screen">
-
-            <div className="bg-[#231D16] lg:w-[80%] md:w-[80%] w-[80%] mx-auto text-center p-8 lg:px-0 md:px-0 border border-white rounded-2xl bg-cover "
-                style={{
-                    backgroundImage: `url(${otherBackground})`,
-                    backgroundSize: "100%",
-                }}>
-                <h1 className=" bg-clip-text text-transparent bg-gradient-to-r from-white from-15% to-[#FFB054] to-90% lg:text-[38px] md:text-[38px] text-[30px] font-titiliumweb font-[700] my-4">
-                    Welcome to your store
-                </h1>
-                <button className="bg-[#54BE73] text-white py-2 px-4  lg:text-[20px] md:text-[20px] font-bold text-[16px] w-1/4 my-4 rounded-3xl">
-                    Mint Your NFT
-                </button>
-=======
   return (
     <main className="bg-[#231D16]">
       <div
@@ -91,7 +74,6 @@ const Store = () => {
               <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
                 Track
               </button>
->>>>>>> Stashed changes
             </div>
             <div className="bg-[#33302E] border border-white rounded-3xl w-[20%] flex justify-between p-4">
               <div className="grid place-content-center text-[13px] p-2">

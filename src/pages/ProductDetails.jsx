@@ -6,13 +6,6 @@ import { toast } from 'react-toastify';
 import { formatUnits } from 'ethers';
 
 const ProductDetails = () => {
-<<<<<<< Updated upstream
-    return (
-        <main className="bg-[#231D16] w-screen">
-            <h1 className=" text-white lg:text-[28px] md:text-[28px] text-[20px] font-serif font-bold flex gap-6 lg:w-[80%] md:w-[80%] w-[100%] mx-auto py-6 px-4">
-             <Link to='/marketplace'> Back </Link><span>  Details Page</span>
-            </h1>
-=======
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const { id } = useParams()
@@ -39,7 +32,6 @@ const ProductDetails = () => {
     // if (error) return toast.error(`Error: ${error.message}`)
     // if (!data) return <div>Loading...</div>;
     console.log(data)
->>>>>>> Stashed changes
 
   return (
     <main className="bg-[#231D16]">

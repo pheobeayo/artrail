@@ -8,26 +8,6 @@ const ListProduct = () => {
   const APIKEY = import.meta.env.VITE_VOTTUN_APIKEY;
   const APPID = import.meta.env.VITE_VOTTUN_APPID;
 
-<<<<<<< Updated upstream
-    return (
-        <main className="bg-[#231D16] w-screen ">
-            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white from-15% to-[#FFB054] to-90% lg:text-[24px] md:text-[24px] text-[20px] font-serif font-bold  text-center">
-                LIST PRODUCTS
-            </h1>
-            <div className="bg-[#231D16] lg:w-[80%] md:w-[80%] w-[80%] mx-auto text-center p-8 lg:px-0 md:px-0 border border-white rounded-2xl bg-cover mt-4"
-                style={{
-                    backgroundImage: `url(${otherBackground})`,
-                    backgroundSize: "100%",
-                }}>
-                <h1 className=" bg-clip-text text-transparent bg-gradient-to-r from-white from-15% to-[#FFB054] to-90% lg:text-[38px] md:text-[38px] text-[30px] font-titiliumweb font-[700] my-4">
-                    Tokenizing Real-World Assets for
-                    <br />Global Access and Trust
-                </h1>
-                <p className="text-white lg:text-[20px] md:text-[20px] text-[16px] text-center font-titiliumweb">
-                    Mint, Trade, and Track Authentic Art, Artifacts, and Crafts with NFTs on a
-                    <br />Secure, Transparent Blockchain Marketplace
-                </p>
-=======
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
     if (!file) {
@@ -44,17 +24,17 @@ const ListProduct = () => {
         "https://ipfsapi-v2.vottun.tech/ipfs/v2/file/upload",
         {
           method: "POST",
-          headers: { 
-              'Authorization': `Bearer ${APIKEY.trim()}`,
-              'x-application-vkn': `${APPID.trim()}`,
+          headers: {
+            Authorization: `Bearer ${APIKEY.trim()}`,
+            "x-application-vkn": `${APPID.trim()}`,
             //   'Content-Type': 'multipart/formdata'
-            },
-            body: formData,
+          },
+          body: formData,
         }
       );
 
       const data = await response.json();
-      console.log(data)
+      console.log(data);
 
       if (data && data.cid) {
         setIpfsUrl(`https://ipfs.io/ipfs/${data.cid}`);
@@ -69,7 +49,7 @@ const ListProduct = () => {
   };
 
   return (
-    <main className="bg-[#231D16]">
+    <main className="bg-[#231D16] w-screen ">
       <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white from-15% to-[#FFB054] to-90% lg:text-[24px] md:text-[24px] text-[20px] font-serif font-bold  text-center">
         LIST PRODUCTS
       </h1>
@@ -116,7 +96,6 @@ const ListProduct = () => {
               <a href={ipfsUrl} target="_blank" rel="noopener noreferrer">
                 {ipfsUrl}
               </a>
->>>>>>> Stashed changes
             </div>
           )}
           <label className="block mt-4 mb-2 text-base font-bold text-white dark:text-white text-left">

@@ -4,9 +4,11 @@ import { NavLink } from "react-router-dom";
 import { Sling as Hamburger } from "hamburger-react";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { IoMdArrowDropdown } from "react-icons/io";
+import { useWeb3ModalAccount } from "@web3modal/ethers/react";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const { isConnected } = useWeb3ModalAccount()
 
   return (
     <header className="py-8 bg-[#231D16] w-screen"
@@ -20,12 +22,12 @@ const Header = () => {
           >
             Homepage
           </NavLink>
-          <NavLink
+          {isConnected && (<NavLink
             to="/list-product"
             className="text-white hover:text-[#FFB054] hover:font-[500] mr-10 text-[18px] font-serif"
           >
             List Product
-          </NavLink>
+          </NavLink>)}
           <NavLink
             to="/marketplace"
             className="text-white hover:text-[#FFB054] hover:font-[500] mr-10 text-[18px] font-serif"
@@ -58,7 +60,7 @@ const Header = () => {
                   href="#"
                   className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
                 >
-                  Connect Wallet
+                 <w3m-button />
                 </a>
               </MenuItem>
               <MenuItem>
@@ -69,14 +71,14 @@ const Header = () => {
                  My Stores
                 </a>
               </MenuItem>
-              <MenuItem>
+              {isConnected && (<MenuItem>
                 <a
                   href="/create-store"
                   className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
                 >
                   Create store
                 </a>
-              </MenuItem>
+              </MenuItem>)}
               <MenuItem>
                 <a
                   href="/profile"

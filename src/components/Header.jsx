@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="py-8 bg-[#231D16] w-screen"
     >
-      <div className="w-[90%] mx-auto lg:flex md:flex justify-between hidden">
+      <div className="w-[93%] lg:w-[93%] md:w-[93%] mx-auto lg:flex md:flex justify-between hidden">
         <img src={logo} alt="" className="w-[235px] h-[43px]" />
         <nav>
           <NavLink
@@ -34,12 +34,12 @@ const Header = () => {
           >
             Marketplace
           </NavLink>
-          <NavLink
+          {isConnected && (<NavLink
             to="/store"
             className="text-white hover:text-[#FFB054] hover:font-[500] mr-10 text-[18px] font-serif"
           >
             Store
-          </NavLink>
+          </NavLink>)}
 
         </nav>
         <Menu as="div" className="relative inline-block text-left ">
@@ -63,14 +63,14 @@ const Header = () => {
                  <w3m-button />
                 </a>
               </MenuItem>
-              <MenuItem>
+              {isConnected && (<MenuItem>
                 <a
                   href="/store"
                   className="block px-4 py-2 text-sm text-white data-[focus]:bg-[#54BE73] data-[focus]:text-white"
                 >
                  My Stores
                 </a>
-              </MenuItem>
+              </MenuItem>)}
               {isConnected && (<MenuItem>
                 <a
                   href="/create-store"

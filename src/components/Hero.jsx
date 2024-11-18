@@ -1,24 +1,19 @@
 import heroImage from "../assets/heroImage.svg";
 import featureIcon from "../assets/featureIcon.svg";
 import featureImage from '../assets/featureImage.svg';
-import heroBackground from '../assets/heroBackground.svg';
 import { Link } from "react-router-dom";
 
 const Hero = () => {
 
 
     return (
-        <main className="bg-[#26201A] w-screen ">
-            <section className="bg-[#26201A] bg-no-repeat bg-cover"
-                style={{
-                    backgroundImage: `url(${heroBackground})`,
-                    backgroundSize: "100%",
-                }}>
+        <main className="bg-[#231D16] w-screen ">
+            <section className="bg-[#231D16]">
 
                 <div>
                     <div className="flex justify-between flex-col lg:flex-row md:flex-row items-center px-4 lg:px-0 md:px-0">
-                        <div className="lg:w-[60%] md:w-[60%] w-[90%] p-16">
-                            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white from-10% to-[#FFB054] font-titiliumweb lg:text-[60px] md:text-[60px] text-[40px] font-[700]">
+                        <div className="xl:w-[70%] lg:w-[70%] md:w-[70%] w-[90%] p-16">
+                            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white from-10% to-[#FFB054] font-Sorts Mill Goudy lg:text-[60px] md:text-[60px] text-[40px] font-[700]">
                                 Tokenizing Real-World
                                 <br /> Assets for Global Access
                                 <br />and Trust
@@ -32,8 +27,8 @@ const Hero = () => {
                                     List Product
                                 </button></Link>
                                 <div className="border border-white rounded-3xl w-[50%] flex justify-between">
-                                    <div className="grid place-content-center text-[13px] p-4"><p className="text-white text-center">Input Product tracking code</p></div>
-                                    <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white">
+                                    <div className="grid place-content-center text-[13px] p-4"><p className="text-white text-center font-thin ">Input Product tracking code</p></div>
+                                    <button className="bg-[#33302E] w-[30%] mt-1 mr-1 text-white mb-1 rounded-3xl p-4 border border-white font-thin">
                                         Track
                                     </button>
                                 </div>
